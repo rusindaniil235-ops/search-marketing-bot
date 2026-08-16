@@ -1,0 +1,1312 @@
+{
+  "generated_at_utc": "2026-08-08T11:01:29.955956+00:00",
+  "canonical": {
+    "dataset_size": 46,
+    "correct": 46,
+    "accuracy": 1.0,
+    "per_intent": {
+      "anomaly": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "attribution": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "conversion": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "data_quality": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "experiment": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "fallback": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "greeting": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "help": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "reporting": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "search_reach": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "team_scope": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "traffic_sources": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      }
+    },
+    "confusion": {
+      "anomaly": {
+        "anomaly": 4
+      },
+      "attribution": {
+        "attribution": 4
+      },
+      "conversion": {
+        "conversion": 4
+      },
+      "data_quality": {
+        "data_quality": 4
+      },
+      "experiment": {
+        "experiment": 4
+      },
+      "fallback": {
+        "fallback": 4
+      },
+      "greeting": {
+        "greeting": 3
+      },
+      "help": {
+        "help": 4
+      },
+      "reporting": {
+        "reporting": 4
+      },
+      "search_reach": {
+        "search_reach": 4
+      },
+      "team_scope": {
+        "team_scope": 3
+      },
+      "traffic_sources": {
+        "traffic_sources": 4
+      }
+    },
+    "predictions": [
+      {
+        "text": "Привет!",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Добрый день",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Здравствуйте, начнем?",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Чем занимается команда аналитики маркетинга Поиска?",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Какие задачи решает аналитик поискового маркетинга?",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.804
+      },
+      {
+        "text": "Расскажи про работу команды",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.612
+      },
+      {
+        "text": "Что такое поисковый охват?",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Почему стало меньше показов?",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как оценить видимость продукта в поиске?",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.624
+      },
+      {
+        "text": "У нас снизились impressions",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.636
+      },
+      {
+        "text": "Как посчитать конверсию?",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Что означает CVR?",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как измерить переход из показа в установку?",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.556
+      },
+      {
+        "text": "Где проверить этапы воронки?",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.564
+      },
+      {
+        "text": "Чем органический трафик отличается от платного?",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Расскажи про paid и organic",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.876
+      },
+      {
+        "text": "Какие бывают каналы привлечения?",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как сравнить рекламный и бесплатный трафик?",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Что такое атрибуция?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.93
+      },
+      {
+        "text": "Как определить источник привлечения?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.966
+      },
+      {
+        "text": "Первый клик или последний клик?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.684
+      },
+      {
+        "text": "По какому правилу присвоить канал?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.566
+      },
+      {
+        "text": "Почему упала метрика?",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как исследовать аномалию?",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Показатель резко вырос",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.581
+      },
+      {
+        "text": "После обновления случился скачок",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.6
+      },
+      {
+        "text": "Как проверить качество данных?",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "В таблице появились дубликаты",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Почему так много NULL и пропусков?",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.852
+      },
+      {
+        "text": "Нужно сверить схему и уникальность ключа",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Как проверить гипотезу?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Что важно в A/B тесте?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.732
+      },
+      {
+        "text": "Как оценить эффект эксперимента?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Зачем считать MDE и проверять контроль?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.744
+      },
+      {
+        "text": "Как оформить аналитический вывод?",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Что включить в отчет?",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как представить результаты анализа?",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Нужны рекомендации и график",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.66
+      },
+      {
+        "text": "Что ты умеешь?",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как пользоваться ботом?",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "С чем ты можешь помочь?",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Покажи свои возможности",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.636
+      },
+      {
+        "text": "Посоветуй рецепт яблочного пирога",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "Кто выиграл футбольный матч?",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "абракадабра",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      }
+    ]
+  },
+  "holdout": {
+    "dataset_size": 24,
+    "correct": 23,
+    "accuracy": 0.9583,
+    "per_intent": {
+      "anomaly": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "attribution": {
+        "correct": 1,
+        "total": 2,
+        "accuracy": 0.5
+      },
+      "conversion": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "data_quality": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "experiment": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "fallback": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "greeting": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "help": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "reporting": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "search_reach": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "team_scope": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "traffic_sources": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      }
+    },
+    "confusion": {
+      "anomaly": {
+        "anomaly": 2
+      },
+      "attribution": {
+        "attribution": 1,
+        "anomaly": 1
+      },
+      "conversion": {
+        "conversion": 2
+      },
+      "data_quality": {
+        "data_quality": 2
+      },
+      "experiment": {
+        "experiment": 2
+      },
+      "fallback": {
+        "fallback": 2
+      },
+      "greeting": {
+        "greeting": 2
+      },
+      "help": {
+        "help": 2
+      },
+      "reporting": {
+        "reporting": 2
+      },
+      "search_reach": {
+        "search_reach": 2
+      },
+      "team_scope": {
+        "team_scope": 2
+      },
+      "traffic_sources": {
+        "traffic_sources": 2
+      }
+    },
+    "predictions": [
+      {
+        "text": "Рад вас приветствовать",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.87
+      },
+      {
+        "text": "Начнем разговор",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.576
+      },
+      {
+        "text": "Как устроена работа направления?",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.72
+      },
+      {
+        "text": "За что отвечает поисковая аналитика?",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.684
+      },
+      {
+        "text": "Нас стали реже видеть в выдаче",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.744
+      },
+      {
+        "text": "Сколько аудитории увидело предложение?",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.672
+      },
+      {
+        "text": "Из тысячи показов только десять целевых действий",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.556
+      },
+      {
+        "text": "Просела доля перехода на следующий шаг",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Пользователи пришли из рекламы или сами",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.507
+      },
+      {
+        "text": "Разложи привлечение по источникам",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.624
+      },
+      {
+        "text": "Кому засчитать эту установку?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.6
+      },
+      {
+        "text": "Трафик упал после смены модели атрибуции",
+        "expected": "attribution",
+        "predicted": "anomaly",
+        "correct": false,
+        "confidence": 0.558
+      },
+      {
+        "text": "График просел на прошлой неделе",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.576
+      },
+      {
+        "text": "Метрика ведет себя необычно",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.672
+      },
+      {
+        "text": "Суммы в двух источниках не сходятся",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.579
+      },
+      {
+        "text": "Есть ли потери строк после объединения?",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.744
+      },
+      {
+        "text": "Есть ли статистически значимый эффект?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.564
+      },
+      {
+        "text": "Сравним тестовую и контрольную группы",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.66
+      },
+      {
+        "text": "Сделай краткое резюме исследования",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Как написать итог для руководителя?",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.672
+      },
+      {
+        "text": "Какие темы поддерживаются?",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.648
+      },
+      {
+        "text": "Подскажи список доступных вопросов",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Построй маршрут до офиса",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "Включи музыку",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      }
+    ]
+  },
+  "overall": {
+    "dataset_size": 70,
+    "correct": 69,
+    "accuracy": 0.9857,
+    "per_intent": {
+      "anomaly": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "attribution": {
+        "correct": 5,
+        "total": 6,
+        "accuracy": 0.8333
+      },
+      "conversion": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "data_quality": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "experiment": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "fallback": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "greeting": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "help": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "reporting": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "search_reach": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "team_scope": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "traffic_sources": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      }
+    },
+    "confusion": {
+      "anomaly": {
+        "anomaly": 6
+      },
+      "attribution": {
+        "attribution": 5,
+        "anomaly": 1
+      },
+      "conversion": {
+        "conversion": 6
+      },
+      "data_quality": {
+        "data_quality": 6
+      },
+      "experiment": {
+        "experiment": 6
+      },
+      "fallback": {
+        "fallback": 6
+      },
+      "greeting": {
+        "greeting": 5
+      },
+      "help": {
+        "help": 6
+      },
+      "reporting": {
+        "reporting": 6
+      },
+      "search_reach": {
+        "search_reach": 6
+      },
+      "team_scope": {
+        "team_scope": 5
+      },
+      "traffic_sources": {
+        "traffic_sources": 6
+      }
+    },
+    "predictions": [
+      {
+        "text": "Привет!",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Добрый день",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Здравствуйте, начнем?",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Чем занимается команда аналитики маркетинга Поиска?",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Какие задачи решает аналитик поискового маркетинга?",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.804
+      },
+      {
+        "text": "Расскажи про работу команды",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.612
+      },
+      {
+        "text": "Что такое поисковый охват?",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Почему стало меньше показов?",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как оценить видимость продукта в поиске?",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.624
+      },
+      {
+        "text": "У нас снизились impressions",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.636
+      },
+      {
+        "text": "Как посчитать конверсию?",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Что означает CVR?",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как измерить переход из показа в установку?",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.556
+      },
+      {
+        "text": "Где проверить этапы воронки?",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.564
+      },
+      {
+        "text": "Чем органический трафик отличается от платного?",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Расскажи про paid и organic",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.876
+      },
+      {
+        "text": "Какие бывают каналы привлечения?",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как сравнить рекламный и бесплатный трафик?",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Что такое атрибуция?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.93
+      },
+      {
+        "text": "Как определить источник привлечения?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.966
+      },
+      {
+        "text": "Первый клик или последний клик?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.684
+      },
+      {
+        "text": "По какому правилу присвоить канал?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.566
+      },
+      {
+        "text": "Почему упала метрика?",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как исследовать аномалию?",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Показатель резко вырос",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.581
+      },
+      {
+        "text": "После обновления случился скачок",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.6
+      },
+      {
+        "text": "Как проверить качество данных?",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "В таблице появились дубликаты",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Почему так много NULL и пропусков?",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.852
+      },
+      {
+        "text": "Нужно сверить схему и уникальность ключа",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Как проверить гипотезу?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Что важно в A/B тесте?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.732
+      },
+      {
+        "text": "Как оценить эффект эксперимента?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Зачем считать MDE и проверять контроль?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.744
+      },
+      {
+        "text": "Как оформить аналитический вывод?",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Что включить в отчет?",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как представить результаты анализа?",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Нужны рекомендации и график",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.66
+      },
+      {
+        "text": "Что ты умеешь?",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Как пользоваться ботом?",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "С чем ты можешь помочь?",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.99
+      },
+      {
+        "text": "Покажи свои возможности",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.636
+      },
+      {
+        "text": "Посоветуй рецепт яблочного пирога",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "Кто выиграл футбольный матч?",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "абракадабра",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "Рад вас приветствовать",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.87
+      },
+      {
+        "text": "Начнем разговор",
+        "expected": "greeting",
+        "predicted": "greeting",
+        "correct": true,
+        "confidence": 0.576
+      },
+      {
+        "text": "Как устроена работа направления?",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.72
+      },
+      {
+        "text": "За что отвечает поисковая аналитика?",
+        "expected": "team_scope",
+        "predicted": "team_scope",
+        "correct": true,
+        "confidence": 0.684
+      },
+      {
+        "text": "Нас стали реже видеть в выдаче",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.744
+      },
+      {
+        "text": "Сколько аудитории увидело предложение?",
+        "expected": "search_reach",
+        "predicted": "search_reach",
+        "correct": true,
+        "confidence": 0.672
+      },
+      {
+        "text": "Из тысячи показов только десять целевых действий",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.556
+      },
+      {
+        "text": "Просела доля перехода на следующий шаг",
+        "expected": "conversion",
+        "predicted": "conversion",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Пользователи пришли из рекламы или сами",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.507
+      },
+      {
+        "text": "Разложи привлечение по источникам",
+        "expected": "traffic_sources",
+        "predicted": "traffic_sources",
+        "correct": true,
+        "confidence": 0.624
+      },
+      {
+        "text": "Кому засчитать эту установку?",
+        "expected": "attribution",
+        "predicted": "attribution",
+        "correct": true,
+        "confidence": 0.6
+      },
+      {
+        "text": "Трафик упал после смены модели атрибуции",
+        "expected": "attribution",
+        "predicted": "anomaly",
+        "correct": false,
+        "confidence": 0.558
+      },
+      {
+        "text": "График просел на прошлой неделе",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.576
+      },
+      {
+        "text": "Метрика ведет себя необычно",
+        "expected": "anomaly",
+        "predicted": "anomaly",
+        "correct": true,
+        "confidence": 0.672
+      },
+      {
+        "text": "Суммы в двух источниках не сходятся",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.579
+      },
+      {
+        "text": "Есть ли потери строк после объединения?",
+        "expected": "data_quality",
+        "predicted": "data_quality",
+        "correct": true,
+        "confidence": 0.744
+      },
+      {
+        "text": "Есть ли статистически значимый эффект?",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.564
+      },
+      {
+        "text": "Сравним тестовую и контрольную группы",
+        "expected": "experiment",
+        "predicted": "experiment",
+        "correct": true,
+        "confidence": 0.66
+      },
+      {
+        "text": "Сделай краткое резюме исследования",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Как написать итог для руководителя?",
+        "expected": "reporting",
+        "predicted": "reporting",
+        "correct": true,
+        "confidence": 0.672
+      },
+      {
+        "text": "Какие темы поддерживаются?",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.648
+      },
+      {
+        "text": "Подскажи список доступных вопросов",
+        "expected": "help",
+        "predicted": "help",
+        "correct": true,
+        "confidence": 0.696
+      },
+      {
+        "text": "Построй маршрут до офиса",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      },
+      {
+        "text": "Включи музыку",
+        "expected": "fallback",
+        "predicted": "fallback",
+        "correct": true,
+        "confidence": 0.0
+      }
+    ]
+  },
+  "latency_ms": {
+    "runs": 7000,
+    "median": 0.161,
+    "p95": 0.188,
+    "max": 0.4381
+  }
+}
