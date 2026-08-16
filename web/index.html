@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Помощник аналитика маркетинга Поиска</title>
+  <style>
+    :root { color-scheme: light; --bg:#f5f7fb; --card:#fff; --ink:#18202b; --muted:#667085; --accent:#ffcc00; --line:#e4e7ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Inter,Arial,sans-serif; color:var(--ink); background:linear-gradient(135deg,#f7f8fb,#eef2f7); min-height:100vh; }
+    main { width:min(940px,calc(100% - 32px)); margin:32px auto; display:grid; grid-template-columns:280px 1fr; gap:20px; }
+    aside,.chat { background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:0 16px 42px rgba(16,24,40,.08); }
+    aside { padding:24px; }
+    .mark { width:42px; height:42px; border-radius:12px; background:var(--accent); display:grid; place-items:center; font-weight:800; margin-bottom:18px; }
+    h1 { font-size:22px; line-height:1.2; margin:0 0 12px; }
+    p { color:var(--muted); line-height:1.5; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+    button.chip { border:1px solid var(--line); background:#fff; border-radius:999px; padding:8px 11px; cursor:pointer; color:#344054; }
+    button.chip:hover { border-color:#98a2b3; }
+    .chat { min-height:680px; display:flex; flex-direction:column; overflow:hidden; }
+    header { padding:18px 22px; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; }
+    .status { color:#027a48; font-size:13px; }
+    #messages { padding:24px; flex:1; overflow:auto; display:flex; flex-direction:column; gap:14px; }
+    .message { max-width:82%; padding:13px 15px; border-radius:16px; line-height:1.45; white-space:pre-wrap; }
+    .bot { align-self:flex-start; background:#f2f4f7; border-bottom-left-radius:5px; }
+    .user { align-self:flex-end; background:#ffdf62; border-bottom-right-radius:5px; }
+    .meta { margin-top:8px; font-size:12px; color:var(--muted); }
+    form { border-top:1px solid var(--line); padding:16px; display:flex; gap:10px; }
+    input { flex:1; border:1px solid #d0d5dd; border-radius:12px; padding:13px 14px; font-size:15px; outline:none; }
+    input:focus { border-color:#667085; box-shadow:0 0 0 3px rgba(102,112,133,.12); }
+    form button { border:0; border-radius:12px; background:#111827; color:#fff; padding:0 20px; font-weight:700; cursor:pointer; }
+    @media (max-width:760px) { main { grid-template-columns:1fr; margin:16px auto; } .chat { min-height:620px; } }
+  </style>
+</head>
+<body>
+<main>
+  <aside>
+    <div class="mark">Я</div>
+    <h1>Помощник аналитика маркетинга Поиска</h1>
+    <p>Учебный прототип: объясняет метрики и порядок аналитических проверок. Не подключён к внутренним системам.</p>
+    <div class="chips">
+      <button class="chip" data-question="Что такое поисковый охват?">Охват</button>
+      <button class="chip" data-question="Как посчитать конверсию?">Конверсия</button>
+      <button class="chip" data-question="Почему упала метрика?">Аномалия</button>
+      <button class="chip" data-question="Как проверить качество данных?">Качество данных</button>
+      <button class="chip" data-question="Что ты умеешь?">Возможности</button>
+    </div>
+  </aside>
+  <section class="chat" aria-label="Чат">
+    <header><strong>Диалог</strong><span class="status">● локальный режим</span></header>
+    <div id="messages" aria-live="polite">
+      <div class="message bot">Здравствуйте! Задайте вопрос об аналитике маркетинга Поиска.</div>
+    </div>
+    <form id="chat-form">
+      <input id="question" autocomplete="off" maxlength="500" placeholder="Например: как проверить аномалию?" aria-label="Ваш вопрос">
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+</main>
+<script>
+  const form = document.getElementById('chat-form');
+  const input = document.getElementById('question');
+  const messages = document.getElementById('messages');
+  function addMessage(text, role, meta='') {
+    const node = document.createElement('div');
+    node.className = `message ${role}`;
+    node.textContent = text;
+    if (meta) { const info=document.createElement('div'); info.className='meta'; info.textContent=meta; node.appendChild(info); }
+    messages.appendChild(node); messages.scrollTop = messages.scrollHeight;
+  }
+  async function ask(text) {
+    if (!text.trim()) return;
+    addMessage(text, 'user'); input.value=''; input.disabled=true;
+    try {
+      const response = await fetch('/api/chat', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({text})});
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || 'Ошибка запроса');
+      addMessage(data.answer, 'bot', `${data.title} · уверенность ${Math.round(data.confidence*100)}%`);
+    } catch (error) { addMessage(`Не удалось получить ответ: ${error.message}`, 'bot'); }
+    finally { input.disabled=false; input.focus(); }
+  }
+  form.addEventListener('submit', event => { event.preventDefault(); ask(input.value); });
+  document.querySelectorAll('[data-question]').forEach(button => button.addEventListener('click', () => ask(button.dataset.question)));
+</script>
+</body>
+</html>
+
